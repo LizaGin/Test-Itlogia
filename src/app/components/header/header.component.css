@@ -1,0 +1,20 @@
+.app-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  color: #b89765;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 0 50px 0;
+}
+
+.app-logo {
+  height: 50px;
+  position: absolute;
+  left: 300px;
+}
+
+.app-menu {
+  display: flex;
+  gap: 60px;
+}

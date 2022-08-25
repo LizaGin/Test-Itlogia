@@ -1,0 +1,29 @@
+.app-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-info__img {
+  height: 50px;
+}
+
+.app-info__text {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 200px;
+}
+
+.app-info__title {
+  color: #f6af47;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.app-info__description {
+  color: #b89765;
+  margin: 0;
+  font-size: 14px;
+}

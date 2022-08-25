@@ -1,0 +1,31 @@
+.app-card {
+  position: relative;
+  width: 300px;
+  height: 345px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #5b4c34;
+}
+
+.app-card__title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.app-card__img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.app-card__description {
+  text-align: center;
+}
+
+.app-card__button {
+  position: absolute;
+  bottom: 15px;
+  left: 40px;
+}

@@ -1,0 +1,30 @@
+.app-footer {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.brown {
+  color: #b89765;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.yellow {
+  color: #f6af47;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.app-footer__img {
+  height: 400px;
+}
+
+.app-footer__text {
+  color: #b89765;
+  width: 300px;
+}

@@ -1,0 +1,15 @@
+<div class="cards" ng-controller="as cntrl">
+  <h2 class="app-cards__title">Выберите свою любимую пиццу</h2>
+  <div class="app-cards">
+    <app-card
+      *ngFor="let card of cards"
+      [card]="card"
+      (buttonClick)="onClick(card.id)"
+    >
+    </app-card>
+    <div class="popup" *ngIf="this.imageOpen">
+      <div class="popup__close" (click)="this.imageOpen = false">X</div>
+      <img class="popup__img" src="{{ cards[this.index].img }}" />
+    </div>
+  </div>
+</div>

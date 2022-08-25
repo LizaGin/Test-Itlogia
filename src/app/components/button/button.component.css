@@ -1,0 +1,9 @@
+.app-button {
+  background-color: #f6af47;
+  color: #5b4c34;
+  font-weight: 600;
+  width: 220px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}

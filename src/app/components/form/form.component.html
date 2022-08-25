@@ -1,0 +1,43 @@
+<form [formGroup]="form" class="app-form" action="submit">
+  <input
+    placeholder="Ваше имя"
+    type="text"
+    name="name"
+    id="name"
+    formControlName="nameControl"
+  />
+  <div
+    class="app-form__hint"
+    *ngIf="
+      form.controls['nameControl'].invalid &&
+      form.controls['nameControl'].touched
+    "
+  >
+    Имя может содержать только буквы
+  </div>
+  <input
+    placeholder="Адрес доставки"
+    type="text"
+    name="address"
+    id="address"
+    formControlName="addressControl"
+  />
+  <input
+    placeholder="Телефон"
+    type="text"
+    name="phone"
+    id="phone"
+    formControlName="phoneControl"
+    mask="+0 (000)-00-00"
+  />
+  <app-button
+    (click)="submit()"
+    type="submit"
+    text="Оформить заказ"
+  ></app-button>
+  <div class="app-popup" *ngIf="isSubmit">
+    <div class="app-popup__close" (click)="this.isSubmit = false">X</div>
+    Спасибо за заказ, {{ name || "Имя" }} Он будет направлен по адресу
+    {{ address || "Адрес доставки" }}
+  </div>
+</form>

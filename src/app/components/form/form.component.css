@@ -1,0 +1,43 @@
+.app-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-form input {
+  padding: 10px;
+  border: 1px solid #b89765;
+  color: #b89765;
+}
+
+.app-form input::placeholder {
+  color: #b89765;
+}
+
+.app-form__hint {
+  font-size: 12px;
+  color: red;
+}
+
+.app-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  background-color: #fff;
+}
+
+.app-popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

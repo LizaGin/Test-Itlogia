@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "MullerExtrabold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("./53e59-muller-extrabold-demo.ttf") format("ttf");
+}
+
+body {
+  font-family: "MullerExtrabold", "Arial", sans-serif;
+  margin: 0px;
+}
